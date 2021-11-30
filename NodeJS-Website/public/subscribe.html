@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Subscribe Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="wp.js"></script>
+
+  <style>
+    body {
+      background-image: url("img/background.png");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+    }
+  </style>
+
+</head>
+
+<body>
+  <!--NAVIGATION BAR-->
+  <header>
+    <div class="logo"><img src="img/logo.png" alt="logo"></div>
+    <nav class="active">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="sub-menu"><a href="#">Chapters</a>
+          <ul>
+            <li><a href="chapter1.html">Chapter 1</a></li>
+            <li><a href="chapter2.html">Chapter 2</a></li>
+            <li><a href="chapter3.html">Chapter 3</a></li>
+            <li><a href="chapter4.html">Chapter 4</a></li>
+          </ul>
+        </li>
+        <li><a href="team-page.html">Team</a></li>
+        <li><a href="subscribe.html"></a>
+          <div class="dropdown">
+            <button class="dropbtn">Subscribe
+
+            </button>
+            <div id="drop" class="dropdown-content">
+              <form action="/" id="inputform" method="POST">
+                First name: <input type="text" name="FirstName" value=""><br>
+                Last name: <input type="text" name="LastName" value=""><br>
+                Email: <input type="email" name="Email" value=""><br>
+                <textarea rows="4" cols="50" name="Comment" placeholder="Comments..." form="inputform"></textarea><br>
+                <input type="submit">
+              </form>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+  </header>
+
+  <section class="floatingform">
+    <h2 id="signup">Signup</h2>
+    <h3 id="text">Fill the form below to get our latest news:</h3>
+    <form action="/subs" id="inputform2" method="POST">
+      <input type="text" name="FirstName2" id="FirstName2" value="" placeholder="First Name..."><br>
+      <input type="text" name="LastName2" id="LastName2" value="" placeholder="Last Name..."><br>
+      <input type="email" name="Email2" id="Email2" value="" placeholder="Email..."><br>
+      <textarea rows="4" name="Comment2" cols="50" id="Comment2" placeholder="Comments..." form="inputform2">
+                </textarea><br>
+      <input type="submit" id="submitbtn2" onclick="postSubcriber()">
+
+    </form>
+
+  </section>
+  <a id="homebtn" href="index.html">HOME</a>
+  <a id="learnbtn" href="chapter1.html">Learn More</a>
+  <h1 id="slogan">THE EARTH<br> IS WHAT WE ALL<br> HAVE IN COMMON.</h1>
+
+
+
+
+
+  <!--FOOTER-->
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="#">CHAPTERS<br></a></li>
+
+        <li id="chapter"><a href="team-page.html">TEAM INFORMATION</a></li>
+        <li><a href="#">SUBSCRIBE</a></li>
+      </ul>
+    </nav>
+
+    <div class="footershareicons">
+      <a href="https://www.instagram.com/">
+        <img src="img/lastinstaicon.png" alt="Instagram Link Image"></a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//twitter.com/theCCCuk">
+        <img src="img/lastfbicon.png" alt="Facebook Link Image"></a>
+      <a href="https://twitter.com/intent/tweet?text=https%3A//twitter.com/theCCCuk">
+        <img src="img/lasttweeticon.png" alt="Twitter Link Image"></a></div>
+    <div class="footerinfo1">
+      <ul>
+        <li>
+          <pre>
+<b>Address 7</b>
+Holbein Place,London,SW1W 8NR
+<b>Send Email </b>
+<b>Number: </b>
++44 (0)20 8026 7793
+/+44 (0)20 8720 2368
+                    </pre>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footerinfo2">
+      <ul>
+        <li>
+          <pre><b>Last Updated:</b>
+32/12/2019
+Copyright<b>©</b> 2019
+            </pre>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,1039 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,800&display=swap');
+
+* {
+  font-family: Open Sans, Sans, serif;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.space {
+  padding-top: 40px;
+}
+
+/*=================
+    NAVIGATION BAR
+===================*/
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 100px;
+  background: #323535;
+  width: 100%;
+  box-sizing: border-box;
+  height: 60px;
+  z-index: 1;
+}
+
+header .logo {
+  height: 50px;
+  line-height: 50px;
+  float: left;
+}
+
+header .logo img {
+  height: 60px;
+}
+
+header nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav ul li {
+  list-style: none;
+  margin: 5px auto;
+  transition: ease-out .2s;
+  position: relative;
+}
+
+header nav ul li ul {
+  position: absolute;
+  left: 0;
+  background: #323535;
+  opacity: .9;
+  display: none;
+}
+
+header nav ul li.active ul {
+  display: block;
+}
+
+header nav ul li:hover ul {
+  display: block;
+}
+
+header nav ul li ul li {
+  display: block;
+  width: 200px;
+}
+
+header nav ul li:hover {
+  border-bottom: 5px solid #0e7f91;
+  cursor: pointer;
+}
+
+header nav ul li a {
+  height: 30px;
+  font-size: 18px;
+  line-height: 50px;
+  padding: 0 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu-toggle {
+  color: #fff;
+  float: right;
+  line-height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+/*=================
+    SUBSCRIBE(FORM)
+===================*/
+/* The dropdown container */
+.dropdown {
+  width: 100%;
+  float: left;
+  overflow: hidden;
+  margin-top: -50px;
+}
+
+#inputform {
+  color: #fff;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 18px;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  /* Important for vertical align on mobile phones */
+  margin: 0;
+}
+
+.dropdown form input {
+  color: #fff;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #323535;
+  opacity: .9;
+  width: 280px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  color: #fff;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  font-size: 20px !important;
+  float: none;
+  color: #fff;
+  padding: 10px 14px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  width: 120px;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #0e7f91;
+  border-bottom: 1px solid rgb(0, 238, 226);
+  transition: all .9s;
+  width: 250px;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*=================
+    INPUTS
+===================*/
+input {
+  width: 70px;
+  height: 30px;
+  padding-right: 10px;
+  margin: 5px;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 5px 5px;
+  border: 1px solid grey !important;
+  background: transparent;
+  color: black;
+}
+
+input:focus {
+  width: 150px;
+  outline: none;
+  border-radius: 1px 1px;
+  border: 1px solid green !important;
+  transition: all 0.9s;
+}
+
+input[type="submit"] {
+  width: 110px;
+  height: 38px;
+  outline: none;
+  border-radius: 10px 10px;
+  border: 1px solid black !important;
+  color: green;
+}
+
+input[type="submit"]:hover {
+  border-radius: 2px 2px;
+  transition: all 0.9s;
+  opacity: 0.8;
+}
+
+textarea {
+  border: 1px solid black;
+  width: 240px;
+  margin: 5px;
+  height: 40px;
+  padding: 2px;
+  font-size: 20px;
+  border-radius: 10px 10px;
+  outline: none;
+  resize: none;
+  overflow: auto;
+}
+
+textarea:focus {
+  border: 1px solid green;
+  width: 260px;
+  transition: all 0.9s;
+  height: 50px;
+}
+
+/*========================================
+---------------HOME PAGE------------------
+==========================================*/
+/*
+====================
+     MAIN IMG
+====================
+*/
+.main-img img {
+  width: 100%;
+}
+
+.main-img h1 {
+  width: 80%;
+  text-align: center;
+  color: #fff;
+  opacity: 0.9;
+  position: absolute;
+  font-size: 4.5vw;
+  margin: -30% 10% 0 10%;
+}
+
+/*
+====================
+    CLIMATE TREND
+====================
+*/
+ul {
+  list-style: none;
+}
+
+.climate-trend {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.climate-trend h2 {
+  font-size: 2.8vw;
+  margin: 2% 0 1% 0;
+}
+
+.climate-trend span b {
+  font-weight: 600;
+  font-size: 2vw;
+}
+
+.climate-trend p {
+  font-size: 1.4vw;
+  margin: 1% 0 6% 0;
+}
+
+.climate-trend {
+  list-style: none;
+}
+
+.climate-trend li {
+  margin: 40px 0;
+}
+
+.bar {
+  display: block;
+  height: 3vw;
+  border: 3px solid #0E7F91;
+  overflow: hidden;
+}
+
+.bar span {
+  height: 3vw;
+  float: left;
+  -webkit-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear;
+  background-color: #c40020;
+}
+
+.percent {
+  width: 90%;
+  animation: percent 5s;
+}
+
+@keyframes percent {
+  0% {
+    background-color: green;
+    width: 0%;
+  }
+
+  100% {
+    width: 90%;
+  }
+}
+
+/*
+====================
+  COMMITTEE SECTION
+====================
+*/
+.meet-committee>.committee-heading {
+  width: 60%;
+  margin: 2% auto;
+  text-align: center;
+}
+
+.meet-committee>.committee-heading h2 {
+  font-size: 5vw;
+  color: #0E7F91;
+  font-weight: 600;
+}
+
+.meet-committee>.committee-heading h3 {
+  font-size: 2.5vw;
+  font-weight: 400;
+  margin-top: -10px;
+  margin-bottom: 7%;
+}
+
+.meet-committee>.container>.box>img {
+  width: 70%;
+  border-radius: 50%;
+}
+
+.meet-committee>.container>.box>img:hover {
+  width: 75%;
+  border-radius: 50%;
+  transition: .4s ease;
+}
+
+.container {
+  width: 85%;
+  margin: auto;
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+.container .box {
+  float: left;
+  text-align: center;
+  width: 30%;
+  padding: 0 0 0 20px;
+}
+
+.container p {
+  font-size: 1.3vw;
+}
+
+.container h4 {
+  font-size: 2vw;
+}
+
+/*========================================
+---------------Chapter 1------------------
+==========================================*/
+.sections {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.sections section {
+  margin: 30px 0;
+}
+
+.sections hr {
+  height: 2px;
+  background-color: #0e7f91;
+  border: none;
+  margin-bottom: 7px;
+}
+
+.sections section h2 {
+  font-size: 3.2vw;
+}
+
+.sections section p {
+  font-size: 1.2vw;
+}
+
+.sections section h5 {
+  font-size: 1.2vw;
+  font-weight: 600;
+}
+
+/*============
+    Circle
+==============*/
+svg {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  z-index: 1000;
+}
+
+svg circle {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: #fff;
+  stroke-width: 10px;
+  stroke-linecap: round;
+  transform: translate(7px, 7px);
+}
+
+svg circle:nth-child(2) {
+  stroke-dasharray: 510;
+  stroke-dashoffset: 510;
+  stroke-width: 14;
+}
+
+.card:nth-child(1) svg circle:nth-child(2) {
+  stroke-dashoffset: 102;
+  stroke: #0e7f91;
+}
+
+.percent1 {
+  width: 165px;
+  height: 165px;
+  border-radius: 50%;
+  z-index: 1000;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  background: #ebebeb;
+}
+
+/*
+======================================
+-------------CHAP 2 & 4---------------
+======================================
+*/
+.emissions {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.emissions h2 {
+  font-size: 2.8vw;
+  margin: 2% 0 1% 0;
+}
+
+.emissions p {
+  font-size: 1.2vw;
+  margin: 1% 0 6% 0;
+}
+
+.emissions ul {
+  font-size: 1.2vw;
+  margin: 1% 0 6% 0;
+}
+
+#emission {
+  width: 80%;
+}
+
+/*========================================
+---------------Chapter 3------------------
+==========================================*/
+#title img {
+  width: 100%;
+}
+
+#title h1 {
+  font-size: 4.5vw;
+  position: absolute;
+  text-align: center;
+  color: white;
+  width: 80%;
+  margin: -30% 10% 0 10%;
+}
+
+.bline {
+  height: 2px;
+  background-color: #0e7f91;
+  border: none;
+  margin-top: 2%;
+  margin-bottom: 2%
+}
+
+.strong {
+  font-size: 150%;
+}
+
+.list {
+  list-style-position: inside;
+}
+
+.lst {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+#content p {
+  font-size: 1.2vw;
+}
+
+#content li {
+  font-size: 1.2vw;
+  list-style-type: square;
+}
+
+@media only screen and (min-width: 961px) {
+  #content {
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    line-height: 30px;
+  }
+
+  #table31 {
+    padding-top: 25px;
+    width: 35%;
+    display: block;
+    margin: auto;
+  }
+
+  #table312 {
+    padding-bottom: 25px;
+    width: 35%;
+    display: block;
+    margin: auto;
+  }
+}
+
+/*========================================
+---------------Team Info------------------
+==========================================*/
+#team {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 60px;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.txt {
+  margin-top: 5%;
+}
+
+.pimage {
+  width: 100%;
+  border-radius: 50px;
+}
+
+#ttitle img {
+  width: 100%;
+}
+
+#ttitle h1 {
+  font-size: 4.5vw;
+  position: absolute;
+  text-align: center;
+  color: white;
+  width: 80%;
+  margin: -25% 10% 0 10%;
+}
+
+/*========================================
+---------------Subscribe------------------
+==========================================*/
+.floatingform {
+  position: relative;
+  background-color: #4b5051;
+  opacity: .8;
+  height: 700px;
+  width: 480px;
+  top: 150px;
+  left: 10%;
+  border-radius: 10px 10px;
+  border: 1px solid grey;
+}
+
+.floatingform label {
+  color: white;
+}
+
+.floatingform input[type="text"] {
+  margin: 40px 0px 0px 40px;
+  width: 380px;
+  height: 50px;
+  padding-right: 10px;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 7px 7px;
+  border: 1px solid grey !important;
+  background: white;
+  color: #001a66;
+}
+
+.floatingform input[type="text"]:focus {
+  text-align: center;
+  outline: none;
+  padding-right: 10px;
+  border-radius: 1px 1px;
+  font-size: 20px;
+  border: 1px solid green !important;
+  background: white;
+  color: #001a66;
+  transition: all 0.9s;
+}
+
+.floatingform input[type="email"] {
+  width: 380px;
+  height: 50px;
+  border-radius: 7px 7px;
+  border: 1px solid grey !important;
+  background: white;
+  color: #001a66;
+  margin: 40px 0px 0px 40px;
+}
+
+.floatingform input[type="email"]:focus {
+  text-align: center;
+  padding-right: 10px;
+  border-radius: 1px 1px;
+  font-size: 20px;
+  border: 1px solid green !important;
+  background: white;
+  color: #0e7f91;
+  transition: all 0.9s;
+}
+
+.floatingform input[type="submit"] {
+  width: 395px;
+  height: 60px;
+  margin: 40px 0px 0px 40px;
+  outline: none;
+  border-radius: 1px 1px;
+  font-size: 20px;
+  background: #0e7f91;
+  color: black;
+}
+
+.floatingform input[type="submit"]:hover {
+  border: 1px solid black !important;
+  outline: none;
+  background-color: white;
+  border-radius: 2px 2px;
+  font-size: 20px;
+  border: 1px solid green !important;
+  transition: all 0.9s;
+  opacity: 0.7;
+}
+
+.floatingform textarea {
+  border: 1px solid white;
+  width: 385px;
+  height: 100px;
+  margin: 30px 0px 0px 40px;
+  padding: 2px;
+  font-size: 20px;
+  border-radius: 2px 2px;
+  outline: none;
+  resize: none;
+  overflow: auto;
+}
+
+.floatingform textarea:focus {
+  border: 1px solid green;
+  padding: 2px;
+  transition: all 0.9s;
+  border: 1px solid black !important;
+  font-size: 20px;
+  border-radius: 4px 4px;
+  outline: none;
+  resize: none;
+  overflow: auto;
+}
+
+::placeholder {
+  color: black;
+  opacity: 1;
+}
+
+#signup {
+  top: 40px;
+  left: 40px;
+  color: white;
+  position: relative;
+}
+
+#text {
+  margin-bottom: 40px;
+  top: 45px;
+  color: rgb(173, 173, 173);
+  left: 40px;
+  position: relative;
+}
+
+#homebtn,
+#learnbtn {
+  display: block;
+  width: 130px;
+  height: 60px;
+  background: #1d746a;
+  padding: 10px;
+  color: black;
+  opacity: .8;
+  font-weight: bold;
+  position: relative;
+  left: 60%;
+  bottom: 300px;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 55px;
+}
+
+#learnbtn {
+  display: block;
+  background: rgb(110, 110, 110);
+  opacity: .8;
+  color: black;
+  left: 70%;
+  bottom: 380px;
+}
+
+#slogan {
+  position: relative;
+  left: 60%;
+  color: white;
+  bottom: 360px;
+  font-weight: lighter;
+}
+
+/*=================
+    FOOTER
+===================*/
+footer {
+  width: 100%;
+  background-color: #323535;
+  height: 255px;
+}
+
+footer ul li a {
+  color: White;
+  font-weight: 400;
+}
+
+footer ul li {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  margin-right: 35px;
+  margin-bottom: -5px;
+  margin-left: 20px;
+}
+
+footer ul {
+  float: right;
+  margin: -10px 0;
+  margin-bottom: 0;
+}
+
+footer img {
+  float: top;
+  margin: 10px;
+  left: 20px;
+}
+
+footer nav ul {
+  float: left;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+footer nav ul li {
+  display: inline-block;
+  margin: 40px;
+  overflow: auto;
+}
+
+footer nav ul li a {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+footer nav ul li a:hover {
+  color: #0e7f91;
+}
+
+.footerinfo1 {
+  position: absolute;
+  margin-top: 20px;
+  left: 85%;
+}
+
+.footerinfo2 {
+  position: absolute;
+  float: right;
+  left: 70%;
+  margin-top: 40px;
+}
+
+@media(max-width: 1891px) {
+  .footerinfo1 {
+    left: 70%;
+  }
+
+  .footerinfo2 {
+    left: 55%;
+  }
+}
+
+/*=================
+    MEDIA QUERIES
+===================*/
+@media(max-width: 991px) {
+
+  /*================
+        HOME PAGE
+    ==================*/
+  .climate-trend {
+    width: 80%;
+  }
+
+  .climate-trend .bar {
+    height: 45px;
+  }
+
+  .climate-trend .bar span {
+    height: 45px;
+  }
+
+  #trend-percent {
+    font-size: 26px;
+  }
+
+  .climate-trend p {
+    font-size: 22px;
+  }
+
+  .container .box {
+    float: none;
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .container p {
+    font-size: 2.5vw;
+  }
+
+  .container h4 {
+    font-size: 4.5vw;
+  }
+
+  /*================
+        NAVIGATION
+    ==================*/
+  header {
+    padding: 0 20px;
+  }
+
+  .menu-toggle {
+    display: block;
+    margin-top: 5px;
+  }
+
+  header nav {
+    position: absolute;
+    width: 100%;
+    background: #323535;
+    top: 60px;
+    left: 0;
+    transition: 0.5s;
+  }
+
+  header nav.active {
+    left: -100%;
+  }
+
+  header nav ul {
+    display: block;
+    text-align: center;
+  }
+
+  header nav ul li {
+    border-bottom: 1px solid rgba(0, 238, 226.2)
+  }
+
+  #drop {
+    display: none;
+  }
+
+  .dropdown i {
+    display: none;
+  }
+
+  .navbar a:hover,
+  .dropdown:hover .dropbtn {
+    transition: all .9s;
+    border: none;
+    background-color: transparent;
+    color: white;
+  }
+
+  header nav ul li {
+    margin: 0;
+  }
+
+  header nav ul li:hover {
+    background-color: #0e7f91;
+    border: none;
+  }
+
+  header nav ul li:hover ul {
+    left: -100%;
+  }
+
+  header nav ul li.active ul {
+    position: relative;
+    background: #444;
+    left: 0;
+  }
+
+  header nav ul li ul li {
+    width: 100%;
+  }
+
+  /*================
+        CHAPTER 1
+    ==================*/
+  /*================
+        CHAPTER 3
+    ==================*/
+  #content {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  sections section h1 {
+    font-size: 37px;
+  }
+
+  .sections section p {
+    font-size: 17px;
+  }
+
+  .sections section h5 {
+    font-size: 17px;
+  }
+
+  /*================
+        Subscribe  1
+    ==================*/
+  #learnbtn {
+    position: inherit;
+    margin: 20px auto 0 auto;
+    height: 100px;
+    width: 200px;
+  }
+
+  #slogan {
+    position: inherit;
+    margin: 10px 25%;
+    text-align: center
+  }
+
+  #homebtn {
+    position: inherit;
+    margin: 180px auto 0 auto;
+    height: 100px;
+    width: 200px;
+  }
+
+  .floatingform {
+    margin: 0 auto;
+    left: 0;
+    margin-bottom: 20px;
+  }
+
+  /*================
+        FOOTER
+    ==================*/
+  footer {
+    height: 295px;
+  }
+
+  footer nav ul li {
+    margin: 40px 0 40px 20px;
+  }
+
+  footer .footershareicons {
+    margin-left: .5%;
+    float: left;
+    margin-top: 0px;
+  }
+
+  .footerinfo1 {
+    position: absolute;
+    margin-top: 150px;
+    left: 35%;
+  }
+
+  .footerinfo2 {
+    position: absolute;
+    margin-top: 170px;
+    left: 1%;
+  }
+}
+
+@media(max-width: 700px) {
+  footer .footershareicons {
+    margin-top: -40px;
+  }
+}

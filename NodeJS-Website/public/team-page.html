@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Team Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="wp.js"></script>
+
+</head>
+
+<body>
+  <!--NAVIGATION BAR-->
+  <header>
+    <div class="logo"><img src="img/logo.png" alt="logo"></div>
+    <nav class="active">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="sub-menu"><a href="#">Chapters</a>
+          <ul>
+            <li><a href="chapter1.html">Chapter 1</a></li>
+            <li><a href="chapter2.html">Chapter 2</a></li>
+            <li><a href="chapter3.html">Chapter 3</a></li>
+            <li><a href="chapter4.html">Chapter 4</a></li>
+          </ul>
+        </li>
+        <li><a href="team-page.html">Team</a></li>
+        <li><a href="subscribe.html"></a>
+          <div class="dropdown">
+            <button class="dropbtn">Subscribe
+
+            </button>
+            <div id="drop" class="dropdown-content">
+              <form action="/" id="inputform" method="POST">
+                First name: <input type="text" name="FirstName" value=""><br>
+                Last name: <input type="text" name="LastName" value=""><br>
+                Email: <input type="email" name="Email" value=""><br>
+                <textarea rows="4" cols="50" name="Comment" placeholder="Comments..." form="inputform"></textarea><br>
+                <input type="submit">
+              </form>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+  </header>
+
+  <!--===================================-->
+  <!--BODY INFORMATION-->
+
+  <section id="ttitle">
+    <img id="code" src="img/code.jpg" alt="Chapter 3 Image" />
+    <h1>Team Information</h1>
+  </section>
+
+  <section id="team">
+
+    <div id="person1">
+      <img src="img/volleyball.jpg" id="volley" class="pimage" alt="Volleyball" />
+      <div class="txt">
+        <strong>Name:</strong>
+        <p>Boyan Yonkov</p>
+        <strong>Bio:</strong>
+        <p>ContentI have a small amount of experience with HTML and CSS before and this
+          website was good practice for me. I did not have any NodeJS experience prior to this but learnt a little more.
+          I like to play volleyball and watch a number of different sports in my spare time.</p>
+        <strong>Role:</strong>
+        <p>Designer and Web Developer</p>
+        <strong>Responsibility:</strong>
+        <p>Design template, Home page HTML/CSS/Validation, Chapter 1 HTML/CSS/Validation.</p>
+        <strong>Contributions:</strong>
+        <p>I did the design template for the website as well as the home page and chapter 1.
+          I did the HTML and CSS for the home page and chapter 1 and validated both.
+          I also modified the header and footer to be responsive.</p>
+      </div>
+    </div>
+
+
+    <div id="person2">
+      <img src="img/tennis.jpg" class="pimage" alt="Tennis Ball" />
+      <div class="txt">
+        <strong>Name:</strong>
+        <p>Hristo Markov</p>
+        <strong>Bio:</strong>
+        <p>Basic knowledge of HTML,CSS,NODE JS. Few programming languages and networking. Life routine:
+          Wake up, Eat, Study, Eat, Gym, Eat, Repeat.
+        </p>
+        <strong>Role:</strong>
+        <p>Front and Back End developer</p>
+        <strong>Responsibility:</strong>
+        <p>Header and footer HTML/CSS/Validation. Subscribe functionality and backend. </p>
+        <strong>Contributions:</strong>
+        <p>Navigation Bar, Footer, Subscribe page, Server side(Getting information from form saving it to a json file,
+          using nodemailer to send confirmation email), Trello setup. </p>
+      </div>
+    </div>
+
+    <div id="person3">
+      <img src="img/bass.jpg" class="pimage" alt="Bass Guitar" />
+      <div class="txt">
+        <strong>Name:</strong>
+        <p>Josh Thomson</p>
+        <strong>Bio:</strong>
+        <p>I'm new to web development but have learnt a lot so far. I play bass guitar in a band and I am a member of the kayak club.</p>
+        <strong>Role:</strong>
+        <p>HTML/CSS Developer.</p>
+        <strong>Responsibility:</strong>
+        <p>Chapter 3 design and HTML/CSS/Validation, Team Page design and HTML/CSS/Validation.</p>
+        <strong>Contributions:</strong>
+        <p>I designed, created and validated both Chapter 3 and the Team Page using HTML and CSS.</p>
+      </div>
+    </div>
+
+    <div id="person4">
+      <img src="img/game.jpg" class="pimage" alt="Xbox Controller" />
+      <div class="txt">
+        <strong>Name:</strong>
+        <p>Bailey Rudd</p>
+        <strong>Bio:</strong>
+        <p>I've had a year of experience in web development creating simple websites in my Foundation Year. I enjoy playing games on my xbox.</p>
+        <strong>Role:</strong>
+        <p>HTML/CSS Developer.</p>
+        <strong>Responsibility:</strong>
+        <p>Chapter 2 design and HTML/CSS/Validation, Chapter 4 design and HTML/CSS/Validation.</p>
+        <strong>Contributions:</strong>
+        <p>I did the design for Chapter 2 and 4 as well as the HTML, CSS and validation.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!--FOOTER-->
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="#">CHAPTERS<br></a></li>
+
+        <li id="chapter"><a href="team-page.html">TEAM INFORMATION</a></li>
+        <li><a href="subscribe.html">SUBSCRIBE</a></li>
+      </ul>
+    </nav>
+
+    <div class="footershareicons">
+      <a href="https://www.instagram.com/">
+        <img src="img/lastinstaicon.png" alt="Instagram Link Image"></a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//twitter.com/theCCCuk">
+        <img src="img/lastfbicon.png" alt="Facebook Link Image"></a>
+      <a href="https://twitter.com/intent/tweet?text=https%3A//twitter.com/theCCCuk">
+        <img src="img/lasttweeticon.png" alt="Twitter Link Image"></a></div>
+    <div class="footerinfo1">
+      <ul>
+        <li>
+          <pre>
+<b>Address 7</b>
+Holbein Place,London,SW1W 8NR
+<b>Send Email </b>
+<b>Number: </b>
++44 (0)20 8026 7793
+/+44 (0)20 8720 2368
+                    </pre>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footerinfo2">
+      <ul>
+        <li>
+          <pre><b>Last Updated:</b>
+32/12/2019
+Copyright<b>©</b> 2019
+            </pre>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+
+</html>

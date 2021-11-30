@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>HOME PAGE</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="wp.js"></script>
+
+</head>
+
+<body>
+  <!--NAVIGATION BAR-->
+  <header>
+    <div class="logo"><img src="img/logo.png" alt="logo"></div>
+    <nav class="active">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="sub-menu"><a href="#">Chapters</a>
+          <ul>
+            <li><a href="chapter1.html">Chapter 1</a></li>
+            <li><a href="chapter2.html">Chapter 2</a></li>
+            <li><a href="chapter3.html">Chapter 3</a></li>
+            <li><a href="chapter4.html">Chapter 4</a></li>
+          </ul>
+        </li>
+        <li><a href="team-page.html">Team</a></li>
+        <li><a href="subscribe.html"></a>
+          <div class="dropdown">
+            <button class="dropbtn">Subscribe
+
+            </button>
+            <div id="drop" class="dropdown-content">
+              <form action="/" id="inputform" method="POST">
+                First name: <input type="text" name="FirstName" value=""><br>
+                Last name: <input type="text" name="LastName" value=""><br>
+                Email: <input type="email" name="Email" value=""><br>
+                <textarea rows="4" cols="50" name="Comment" placeholder="Comments..." form="inputform"></textarea><br>
+                <input type="submit">
+              </form>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+  </header>
+
+  <!--===================================-->
+  <!--BODY INFORMATION-->
+
+
+  <section class="main-img">
+    <img src="img/home-img.jpg" alt="Main-Home Image">
+    <h1>The impacts of changing climate have become increasingly visiable</h1>
+  </section>
+
+
+  <section class="climate-trend">
+    <ul>
+      <li>
+        <h2>Current Climate Warming Trend: </h2>
+        <span class="bar"><span class="percent" onscroll="myFunction()"></span>
+          <b id="trend-percent">95%</b>
+        </span>
+      </li>
+    </ul>
+
+    <p>New plans must be drawn up to
+      deliver them. And even if net zero is achieved globally, our climate will continue to warm in the
+      short-term, and sea level will continue to rise for centuries. We must plan for this reality. Climate
+      change adaptation is a defining challenge for every government, yet there is only limited
+      evidence of the present UK Government taking it sufficiently seriously.
+      <br>
+      It is time to act. Next year may see the UK host the most important global climate summit since
+      Paris in 2015.</p>
+  </section>
+
+
+
+  <section class="meet-committee">
+    <div class="committee-heading">
+      <h2>Meet The Committee</h2>
+      <h3>We are here to make a change!</h3>
+    </div>
+    <div class="container">
+      <div class="box">
+        <img src="img/person1.jpg" alt="Picture of First Comittee">
+        <h4>Lord Deben</h4>
+        <p>Lord Deben was the UK’s longest-serving Secretary of State
+          for the Environment (1993 to 1997). He has held several other
+          high-level ministerial posts. </p>
+      </div>
+      <div class="box">
+        <img src="img/person2.jpg" alt="Picture of Second Comittee">
+        <h4>Baroness Brown</h4>
+        <p>Baroness Brown of Cambridge DBE FREng FRS (Julia King) is an
+          engineer, with a career spanning senior engineering and
+          leadership roles in industry and academia. </p>
+      </div>
+      <div class="box">
+        <img src="img/person3.jpg" alt="Picture of Second Comittee">
+        <h4>Keith Bell</h4>
+        <p>Keith Bell is a co-Director of the UK Energy Research Centre
+          (UKERC) and a Chartered Engineer. In addition to teaching and
+          being involved with energy.</p>
+      </div>
+    </div>
+  </section>
+
+  <!--===================================-->
+
+
+  <!--FOOTER-->
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="#">CHAPTERS<br></a></li>
+
+        <li id="chapter"><a href="team-page.html">TEAM INFORMATION</a></li>
+        <li><a href="subscribe.html">SUBSCRIBE</a></li>
+      </ul>
+    </nav>
+
+    <div class="footershareicons">
+      <a href="https://www.instagram.com/">
+        <img src="img/lastinstaicon.png" alt="Instagram Link Image"></a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//twitter.com/theCCCuk">
+        <img src="img/lastfbicon.png" alt="Facebook Link Image"></a>
+      <a href="https://twitter.com/intent/tweet?text=https%3A//twitter.com/theCCCuk">
+        <img src="img/lasttweeticon.png" alt="Twitter Link Image"></a></div>
+    <div class="footerinfo1">
+      <ul>
+        <li>
+          <pre>
+<b>Address 7</b>
+Holbein Place,London,SW1W 8NR
+<b>Send Email </b>
+<b>Number: </b>
++44 (0)20 8026 7793
+/+44 (0)20 8720 2368
+                    </pre>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footerinfo2">
+      <ul>
+        <li>
+          <pre><b>Last Updated:</b>
+32/12/2019
+Copyright<b>©</b> 2019
+            </pre>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+
+</html>

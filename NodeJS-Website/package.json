@@ -1,0 +1,25 @@
+{
+  "name": "webasgn2",
+  "version": "1.0.0",
+  "description": "NodeApp using nodemailer",
+  "main": "app.js",
+  "dependencies": {
+    "async": "^3.1.0",
+    "connect": "^3.7.0",
+    "dotenv": "^8.2.0",
+    "fs": "0.0.1-security",
+    "html2plaintext": "^2.1.2",
+    "module_name": "^1.0.0",
+    "nodemailer": "^6.3.1",
+    "nodemailer-smtp-transport": "^2.7.4",
+    "serve-static": "^1.14.1"
+  },
+  "devDependencies": {
+    "supertest": "^4.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "HristoMarkov",
+  "license": "ISC"
+}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Chapter 1</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="wp.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+
+</head>
+
+<body>
+    <!--NAVIGATION BAR-->
+    <header>
+        <div class="logo"><img src="img/logo.png" alt="logo"></div>
+        <nav class="active">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="sub-menu"><a href="#">Chapters</a>
+                    <ul>
+                        <li><a href="chapter1.html">Chapter 1</a></li>
+                        <li><a href="chapter2.html">Chapter 2</a></li>
+                        <li><a href="chapter3.html">Chapter 3</a></li>
+                        <li><a href="chapter4.html">Chapter 4</a></li>
+                    </ul>
+                </li>
+                <li><a href="team-page.html">Team</a></li>
+                <li><a href="subscribe.html"></a>
+                    <div class="dropdown">
+                        <button class="dropbtn">Subscribe
+
+                        </button>
+                        <div id="drop" class="dropdown-content">
+                            <form action="/" id="inputform" method="POST">
+                                First name: <input type="text" name="FirstName" value=""><br>
+                                Last name: <input type="text" name="LastName" value=""><br>
+                                Email: <input type="email" name="Email" value=""><br>
+                                <textarea rows="4" cols="50" name="Comment" placeholder="Comments..." form="inputform"></textarea><br>
+                                <input type="submit">
+                            </form>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+    </header>
+
+    <!--===================================-->
+    <!--BODY INFORMATION-->
+    <div class="space"></div>
+    <section class="main-img">
+        <img src="img/emissions-min.jpg" alt="Header Image">
+        <h1>Chapter 1: UK Emissions</h1>
+    </section>
+
+
+    <section class="sections">
+
+        <section class="section1">
+            <p>In May 2019, in response to a request by the UK, Scottish and Welsh Governments, the Committee advised that now is the right time to set a net-zero target for the UK, going beyond the existing 2050 target for at least an 80% reduction required by the Climate Change Act (2008):</p>
+
+            <h2>Goal:</h2>
+            <div class="container1">
+                <div class="card">
+                    <div class="box">
+                        <h5>At Least:</h5>
+                        <h2>80%</h2>
+                        <div class="percent1">
+                            <svg>
+                                <circle cx="80" cy="80" r="80"></circle>
+                                <circle cx="80" cy="80" r="80"></circle>
+                            </svg>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <p>The path to achieving net-zero emissions by 2050 will necessarily entail a steeper reduction in
+                emissions over the intervening three decades (Figure 1.1). On average, emissions will need to fall
+                by 15 MtCO2e every year, equivalent to 3% of emissions in 2018.
+                As the existing carbon budgets were set on a cost-effective path to achieving an 80% reduction
+                in UK greenhouse gas emissions by 2050, a more ambitious long-term target is likely to require
+                outperformance of the carbon budgets legislated to date. The Committee will revise its
+                assessment of the appropriate path for emissions over the period to 2050 as part of its advice
+                next year on the sixth carbon budget (covering 2033-2037).</p>
+        </section>
+
+
+        <section class="section2">
+            <hr>
+            <h2>Actual Emissions</h2>
+
+            <!--Chart-->
+            <div class="container">
+                <canvas id="myChart"></canvas>
+            </div>
+
+            <p>The Committee’s monitoring of progress on meeting carbon budgets and towards meeting the 2050 target is based on a detailed hierarchy of indicators. These will also need to be updated once the Committee has undertaken the full analysis on the pathway to net-zero emissions in 2050, as part of our advice on the sixth carbon budget. In this report we assess progress against the existing indicators to give an indication of whether the UK is on track even to meet the existing carbon budgets. </p>
+        </section>
+
+
+        <section class="section3">
+            <hr>
+            <h2>Change is Happening</h2>
+            <h5>Change in UK CO2 emissions between 2017 and 2018</h5>
+
+            <div class="container">
+                <canvas id="myChart1"></canvas>
+            </div>
+
+        </section>
+
+    </section>
+
+
+
+
+    <!--===================================-->
+
+
+    <!--FOOTER-->
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#">CHAPTERS<br></a></li>
+
+                <li id="chapter"><a href="team-page.html">TEAM INFORMATION</a></li>
+                <li><a href="subscribe.html">SUBSCRIBE</a></li>
+            </ul>
+        </nav>
+
+        <div class="footershareicons">
+            <a href="#home">
+                <img src="img/lastinstaicon.png" alt="Instagram Link Image"></a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//twitter.com/theCCCuk">
+                <img src="img/lastfbicon.png" alt="Facebook Link Image"></a>
+            <a href="https://twitter.com/intent/tweet?text=https%3A//twitter.com/theCCCuk">
+                <img src="img/lasttweeticon.png" alt="Twitter Link Image"></a></div>
+        <div class="footerinfo1">
+            <ul>
+                <li>
+                    <pre>
+    <b>Address 7</b>
+    Holbein Place,London,SW1W 8NR
+    <b>Send Email </b>
+    <b>Number: </b>
+    +44 (0)20 8026 7793
+    /+44 (0)20 8720 2368
+                        </pre>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footerinfo2">
+            <ul>
+                <li>
+                    <pre><b>Last Updated:</b>
+32/12/2019
+Copyright<b>©</b> 2019
+                </pre>
+            </ul>
+        </div>
+    </footer>
+
+</body></html>
